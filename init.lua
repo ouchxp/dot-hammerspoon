@@ -1,6 +1,6 @@
 require "utils"
 require "window"
-
+require "caffeine"
 -----------------------------------------------
 -- Reload config on write
 -----------------------------------------------
