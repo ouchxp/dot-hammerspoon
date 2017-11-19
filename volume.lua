@@ -9,7 +9,6 @@ function onAudioEvent(state)
         hs.alert.show("Built-in Output Muted")
     end
 end
-if not hs.audiodevice.watcher.isRunning() then
-    hs.audiodevice.watcher.setCallback(onAudioEvent)
-    hs.audiodevice.watcher.start()
-end
+
+hs.audiodevice.watcher.setCallback(onAudioEvent)
+hs.audiodevice.watcher.start()
