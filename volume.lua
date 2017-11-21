@@ -6,7 +6,7 @@ function onAudioEvent(state)
         local output = hs.audiodevice.findOutputByName("Built-in Output")
         output:setOutputVolume(0)
         output:setOutputMuted(true)
-        hs.alert.show("Built-in Output Muted")
+        show("Built-in Output Muted")
     end
 end
 

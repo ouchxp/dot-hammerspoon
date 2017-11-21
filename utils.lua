@@ -9,3 +9,8 @@ function reloadConfig(files)
         hs.reload()
     end
 end
+
+-- show on primary screen by default
+function show(msg)
+    hs.alert.show("Built-in Output Muted", hs.alert.defaultStyle, hs.screen.primaryScreen())
+end
