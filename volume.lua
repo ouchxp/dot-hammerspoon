@@ -12,3 +12,11 @@ end
 
 hs.audiodevice.watcher.setCallback(onAudioEvent)
 hs.audiodevice.watcher.start()
+
+
+function reloadIfNotRunning()
+    if not hs.audiodevice.watcher.isRunning then
+        hs.reload()
+    end
+end
+hs.timer.doEvery(60, reloadIfNotRunning)

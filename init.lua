@@ -12,11 +12,3 @@ local alt = {"alt"}
 hs.hotkey.bind(alt,    "1",     function() hs.application.open("iTerm") end)
 hs.hotkey.bind(alt,    "2",     function() hs.application.open("Emacs") end)
 hs.hotkey.bind(alt,    "3",     function() hs.application.open("Google Chrome") end)
-
-function onPowerEvent(event)
-    if event == hs.caffeinate.watcher.systemDidWake then
-        hs.reload()
-    end
-end
-
-hs.caffeinate.watcher.new(onPowerEvent):start()
