@@ -15,7 +15,7 @@ hs.audiodevice.watcher.start()
 
 
 function reloadIfNotRunning()
-    if not hs.audiodevice.watcher.isRunning then
+    if not hs.audiodevice.watcher.isRunning() then
         hs.reload()
     end
 end
