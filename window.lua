@@ -68,4 +68,11 @@ hs.hotkey.bind(hyper, "n", function() hs.hints.windowHints() end)
 -- hyper f for fullscreen, c for center
 -----------------------------------------------
 hs.hotkey.bind(hyper, "c", function() hs.window.focusedWindow():centerOnScreen() end)
-hs.hotkey.bind(hyper, "f", function() hs.window.focusedWindow():maximize() end)
+hs.hotkey.bind(hyper, "f", function()
+    local w = hs.window.focusedWindow()
+    if w:application():name() == "Emacs" then
+        hs.eventtap.keyStroke({"alt"}, "F10")
+    else
+        w.focusedWindow():maximize()
+    end
+end)
