@@ -73,6 +73,6 @@ hs.hotkey.bind(hyper, "f", function()
     if w:application():name() == "Emacs" then
         hs.eventtap.keyStroke({"alt"}, "F10")
     else
-        w.focusedWindow():maximize()
+        w:maximize(0)
     end
 end)
