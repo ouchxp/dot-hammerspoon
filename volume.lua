@@ -6,13 +6,11 @@ function onAudioEvent(state)
         local output = hs.audiodevice.findOutputByName("Built-in Output")
         output:setOutputVolume(0)
         output:setOutputMuted(true)
-        show("Built-in Output Muted")
     end
 end
 
 hs.audiodevice.watcher.setCallback(onAudioEvent)
 hs.audiodevice.watcher.start()
-
 
 function reloadIfNotRunning()
     if not hs.audiodevice.watcher.isRunning() then

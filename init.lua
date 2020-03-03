@@ -2,7 +2,6 @@ require "utils"
 require "window"
 require "caffeine"
 require "volume"
-require "app-hotkey"
 -----------------------------------------------
 -- Reload config on write
 -----------------------------------------------
