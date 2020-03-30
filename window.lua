@@ -49,8 +49,12 @@ hs.hotkey.bind(hyper, "2", function() resize(1, 0, 2, 2) end)
 -----------------------------------------------
 -- hyper left, right for half window
 -----------------------------------------------
+top50         = { x = 0.00, y = 0.00, w = 1.00, h = 0.50 }
+bottom50      = { x = 0.00, y = 0.50, w = 1.00, h = 0.50 }
 hs.hotkey.bind(hyper, "left", function() hs.window.focusedWindow():moveToUnit(hs.layout.left50) end)
 hs.hotkey.bind(hyper, "right", function() hs.window.focusedWindow():moveToUnit(hs.layout.right50) end)
+hs.hotkey.bind(hyper, "up", function() hs.window.focusedWindow():moveToUnit(top50) end)
+hs.hotkey.bind(hyper, "down", function() hs.window.focusedWindow():moveToUnit(bottom50) end)
 
 -----------------------------------------------
 -- move between monitors
