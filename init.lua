@@ -1,7 +1,8 @@
 require "utils"
 require "window"
 require "caffeine"
-require "volume"
+-- disable volume module
+-- require "volume"
 -----------------------------------------------
 -- Reload config on write
 -----------------------------------------------
