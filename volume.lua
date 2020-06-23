@@ -1,11 +1,18 @@
 -----------------------------------------------
 -- Mute Built-in Output Device
 -----------------------------------------------
-function onAudioEvent(state)
-    if state == "dev#" then
-        local output = hs.audiodevice.findOutputByName("Built-in Output")
+function mute(speakerName)
+    local output = hs.audiodevice.findOutputByName(speakerName)
+    if output then
         output:setOutputVolume(0)
         output:setOutputMuted(true)
+    end
+end
+
+function onAudioEvent(state)
+    if state == "dev#" then
+        mute("Built-in Output")
+        mute("MacBook Pro Speakers")
     end
 end
 
