@@ -59,13 +59,13 @@ hs.hotkey.bind(hyperCtrl, "down", function() hs.window.focusedWindow():moveToUni
 -----------------------------------------------
 -- move between monitors
 -----------------------------------------------
-hs.hotkey.bind(hyperCtrl, "left", function()
+hs.hotkey.bind(hyperCtrl, "right", function()
     local win = hs.window.focusedWindow()
     local screen = win:screen()
     win:move(win:frame():toUnitRect(screen:frame()), screen:previous(), true, 0)
   end)
 
-hs.hotkey.bind(hyperCtrl, "right", function()
+hs.hotkey.bind(hyperCtrl, "left", function()
     local win = hs.window.focusedWindow()
     local screen = win:screen()
     win:move(win:frame():toUnitRect(screen:frame()), screen:next(), true, 0)
