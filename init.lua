@@ -1,7 +1,7 @@
 require "utils"
 require "window"
 require "caffeine"
-require "volume"
+-- require "volume"
 -----------------------------------------------
 -- Reload config on write
 -----------------------------------------------
