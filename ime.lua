@@ -2,18 +2,18 @@ local pinyin = "com.sogou.inputmethod.sogou.pinyin"
 local abc = "com.apple.keylayout.ABC"
 
 -- app to expected ime config
-local app2Ime = {}
-app2Ime['iTerm2'] = abc
-app2Ime['IntelliJ IDEA'] = abc
-app2Ime['Google Chrome'] = abc
-app2Ime['Code'] = abc
-app2Ime['Finder'] = abc
-app2Ime['Preview'] = abc
-app2Ime['Mail'] = abc
-app2Ime['Postman'] = abc
-app2Ime['Alfred'] = abc
-app2Ime['Calendar'] = abc
-
+local app2Ime = {
+    iTerm2 = abc,
+    Code = abc,
+    Finder = abc,
+    Preview = abc,
+    Mail = abc,
+    Postman = abc,
+    Alfred = abc,
+    Calendar = abc,
+    ['IntelliJ IDEA'] = abc,
+    ['Google Chrome'] = abc,
+}
 
 function updateFocusAppInputMethod()
     local focusAppName = hs.window.frontmostWindow():application():name()
