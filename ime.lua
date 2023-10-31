@@ -25,7 +25,9 @@ end
 -- helper hotkey to figure out the app path and name of current focused window
 hs.hotkey.bind({'ctrl', 'cmd'}, ".", function()
     hs.alert.show("App name:      "
-    ..hs.window.focusedWindow():application():name()
+    .."\""
+    ..hs.window.focusedWindow():application():bundleID()
+    .."\""
     .."\n"
     .."IM source id:  "
     ..hs.keycodes.currentSourceID())
