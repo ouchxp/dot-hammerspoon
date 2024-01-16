@@ -1,5 +1,5 @@
 require "utils"
-require "window"
+-- require "window" -- use rectangle instead
 require "caffeine"
 require "ime"
 require "shortcut"
