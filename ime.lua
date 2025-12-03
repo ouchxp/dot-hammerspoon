@@ -4,6 +4,7 @@ local abc = "com.apple.keylayout.ABC"
 -- app to expected ime config
 local app2Ime = {
     iTerm2 = abc,
+    Ghostty = abc,
     Code = abc,
     Finder = abc,
     Preview = abc,
