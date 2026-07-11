@@ -1,4 +1,4 @@
-local pinyin = "com.sogou.inputmethod.sogou.pinyin"
+local pinyin = "com.apple.inputmethod.SCIM.ITABC"
 local abc = "com.apple.keylayout.ABC"
 
 -- app to expected ime config
