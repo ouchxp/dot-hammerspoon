@@ -5,6 +5,7 @@ local abc = "com.apple.keylayout.ABC"
 local app2Ime = {
     iTerm2 = abc,
     Ghostty = abc,
+    Orca = abc,
     Code = abc,
     Finder = abc,
     Preview = abc,
@@ -29,6 +30,7 @@ hs.hotkey.bind({'ctrl', 'cmd'}, ".", function()
     .."\""
     ..hs.window.focusedWindow():application():bundleID()
     .."\""
+    ..hs.window.focusedWindow():application():name()
     .."\n"
     .."IM source id:  "
     ..hs.keycodes.currentSourceID())
