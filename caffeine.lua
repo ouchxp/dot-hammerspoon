@@ -1,4 +1,4 @@
-local caffeine = hs.menubar.new()
+local caffeine = hs.menubar.new(true, "caffeine")
 function setCaffeineDisplay(state)
     caffeine:setIcon(state and "caffeine-on.pdf" or "caffeine-off.pdf")
 end
