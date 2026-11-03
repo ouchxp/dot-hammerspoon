@@ -13,6 +13,7 @@ local app2Ime = {
     Postman = abc,
     Alfred = abc,
     Calendar = abc,
+    Herdr = abc,
     ['IntelliJ IDEA'] = abc,
     ['Google Chrome'] = abc,
 }
